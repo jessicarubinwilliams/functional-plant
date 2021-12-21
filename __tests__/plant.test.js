@@ -7,6 +7,7 @@ describe('storeState', () => {
       expect(stateControl()).toEqual({});
   });
 
+  //updateState points to stateControl which points to storeState hence the expect of updatedState is in effect an expect of stateControl
   test('should correctly store changed state', () => {
     const stateControl = storeState();
     const testFunction = changeState("testProperty")(2);
