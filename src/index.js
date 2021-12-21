@@ -6,36 +6,36 @@ import { storeState, blueFood, feed, hydrate, superWater, plant } from './js/pla
 
 // This function has side effects because we are using jQuery. Manipulating the DOM will always be a side effect. Note that we only use one of our functions to alter soil. You can easily add more.
 
-const airPlant = plant("airPlant");
-const airPlantStateControl = storeState();
+const plant1 = plant("Air Plant");
+const plant1StateControl = storeState();
 
-$('#air-plant-name').text(airPlant.name);
+$('#plant1-name').text(plant1.name);
 
-$('#air-plant-super-feed').click(function() {
-  const airPlantState = airPlantStateControl(blueFood);
-  $('#air-plant-soil-value').text(`Soil: ${airPlantState.soil}`);
+$('#plant1-super-feed').click(function() {
+  const plant1State = plant1StateControl(blueFood);
+  $('#plant1-soil-value').text(`Soil: ${plant1State.soil}`);
 });
 
-$('#air-plant-feed').click(function() {
-  const airPlantState = airPlantStateControl(feed);
-  $('#air-plant-soil-value').text(`Soil: ${airPlantState.soil}`);
+$('#plant1-feed').click(function() {
+  const plant1State = plant1StateControl(feed);
+  $('#plant1-soil-value').text(`Soil: ${plant1State.soil}`);
 });
 
-$('#air-plant-water').click(function() {
-  const airPlantState = airPlantStateControl(hydrate);
-  $('#air-plant-water-value').text(`Water: ${airPlantState.water}`);
+$('#plant1-water').click(function() {
+  const plant1State = plant1StateControl(hydrate);
+  $('#plant1-water-value').text(`Water: ${plant1State.water}`);
 });
 
-$('#air-plant-super-water').click(function() {
-  const airPlantState = airPlantStateControl(superWater);
-  $('#air-plant-water-value').text(`Water: ${airPlantState.water}`);
+$('#plant1-super-water').click(function() {
+  const plant1State = plant1StateControl(superWater);
+  $('#plant1-water-value').text(`Water: ${plant1State.water}`);
 });
   
 // This function doesn't actually do anything useful in this application - it just demonstrates how we can "look" at the current state (which the DOM is holding anyway). However, students often do need the ability to see the current state without changing it so it's included here for reference.
   
-$('#air-plant-show-state').click(function() {
+$('#plant1-show-state').click(function() {
   // We just need to call stateControl() without arguments to see our current state.
-  const currentState = airPlantStateControl();
-  $('#air-plant-soil-value').text(`Soil: ${currentState.soil}`);
-  $('#air-plant-water-value').text(`Water: ${currentState.water}`);
+  const currentState = plant1StateControl();
+  $('#plant1-soil-value').text(`Soil: ${currentState.soil}`);
+  $('#plant1-water-value').text(`Water: ${currentState.water}`);
 });
