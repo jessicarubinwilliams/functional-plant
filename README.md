@@ -1,28 +1,18 @@
-## _THIS PROJECT IS AN ENVIRONMENT TEMPLATE FOR FUTURE PROJECTS_
+# _Grow Plants_
 
-## _This project is not in a complete or portfolio ready state, and should not be considered representational of professional work._
+#### _This web-based application allows the user to feed and water two virtual plants._
 
-# _Application Name_
-
-#### _Brief description of application_
-
-#### _By **Jessica R. Williams**_
+#### _By **Mary Marks and Jessica R. Williams**_
 
 #### _Table of Contents_
 
-1. [Preview](#preview)
-2. [Technologies Used](#technologies)
-3. [Description](#description)
-4. [Setup/Installation Requirements](#setup)
-5. [Additional Setup/Installation Note for Windows Users](#windows)
-6. [Specifications](#specs)
-7. [Known Bugs](#bugs)
-8. [License](#license)
-9. [Contact Information](#contact)
-
-## Preview <a id="preview"></a>
-
-* _Direct your browser to a [live version](https://jessicarubinwilliams.github.io/project/index.html) on GitHub Pages._
+1. [Technologies Used](#technologies)
+2. [Description](#description)
+3. [Setup/Installation Requirements](#setup)
+4. [Additional Setup/Installation Note for Windows Users](#windows)
+5. [Known Bugs](#bugs)
+6. [License](#license)
+7. [Contact Information](#contact)
 
 ## Technologies Used <a id="technologies"></a>
 
@@ -50,14 +40,14 @@
 
 ## Description <a id="description"></a>
 
-_This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have. Balance between a summary of the project and a tame market pitch._
+_This web-based application allows the user to feed and water two virtual plants._
 
 ## Setup/Installation Requirements <a id="setup"></a>
 
 * _Open the terminal on your local machine_
 * _If [Node.js](https://nodejs.org/en/) and [Nope Package Manager (npm)](https://www.npmjs.com/) are not installed on your local device, follow the instructions [here](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)_
 * _Navigate to the directory inside of which you wish to house this project_
-* _Clone this project with the following git command `$ git clone <https://github.com/jessicarubinwilliams/project>`_
+* _Clone this project with the following git command `$ git clone <https://github.com/jessicarubinwilliams/functional-plant>`_
 * _Navigate to the top level of the repository with the command `$ cd project`_
 * _Recreate project environment and install required dependencies with terminal command `$ npm install`_
 * _Create production environment with terminal command `$ npm run build`_
@@ -70,20 +60,13 @@ _This is a detailed description of your application. Give as much detail as need
 _This environment was created on a Mac. For it to work properly in your local environment make the following change:_
 * _Update package.json, line 8 to: `"start": "npm run build & webpack-dev-server --open --mode development",`_
 
-## Specifications <a id="specs"></a>
-
-| Behavior | Input | Output |
-|:---:|:---:|:---:|
-| The program should handle... | When it receives... | It should return... |
-
 ## Known Bugs <a id="bugs"></a>
-* _Any known issues_
-* _should go here_
+* _No known bugs_
 
 ## License <a id="license"></a>
 *[MIT](https://choosealicense.com/licenses/mit/)*
 
-Copyright (c) **_2021 Jessica R. Williams_**
+Copyright (c) **_2021 Mary Marks and Jessica R. Williams_**
 
 ## Contact Information <a id="contact"></a>
-**_Jessica R. Williams [mailto](mailto:jessicarubinwilliams@gmail.com)_**
+**_ Mary Marks [mailto](maryleemarks@gmail.com), Jessica R. Williams [mailto](mailto:jessicarubinwilliams@gmail.com)_**
