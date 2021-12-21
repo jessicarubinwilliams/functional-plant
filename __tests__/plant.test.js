@@ -6,6 +6,13 @@ describe('storeState', () => {
       const stateControl = storeState();
       expect(stateControl()).toEqual({});
   });
+
+  test('should correctly store changed state', () => {
+    const stateControl = storeState();
+    const testFunction = changeState("testProperty")(2);
+    const updatedState = stateControl(testFunction);
+    expect(updatedState).toEqual({ testProperty: 2 });
+  });
 });
 
 describe('changeState', () => {
