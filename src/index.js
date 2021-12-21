@@ -9,6 +9,9 @@ import { storeState, blueFood, feed, hydrate, superWater, plant } from './js/pla
 const plant1 = plant("Air Plant");
 const plant1StateControl = storeState();
 
+const plant2 = plant("Rose Painted Calathea");
+const plant2StateControl = storeState();
+
 $('#plant1-name').text(plant1.name);
 
 $('#plant1-super-feed').click(function() {
@@ -38,4 +41,35 @@ $('#plant1-show-state').click(function() {
   const currentState = plant1StateControl();
   $('#plant1-soil-value').text(`Soil: ${currentState.soil}`);
   $('#plant1-water-value').text(`Water: ${currentState.water}`);
+});
+
+$('#plant2-name').text(plant2.name);
+
+$('#plant2-super-feed').click(function() {
+  const plant2State = plant2StateControl(blueFood);
+  $('#plant2-soil-value').text(`Soil: ${plant2State.soil}`);
+});
+
+$('#plant2-feed').click(function() {
+  const plant2State = plant2StateControl(feed);
+  $('#plant2-soil-value').text(`Soil: ${plant2State.soil}`);
+});
+
+$('#plant2-water').click(function() {
+  const plant2State = plant2StateControl(hydrate);
+  $('#plant2-water-value').text(`Water: ${plant2State.water}`);
+});
+
+$('#plant2-super-water').click(function() {
+  const plant2State = plant2StateControl(superWater);
+  $('#plant2-water-value').text(`Water: ${plant2State.water}`);
+});
+  
+// This function doesn't actually do anything useful in this application - it just demonstrates how we can "look" at the current state (which the DOM is holding anyway). However, students often do need the ability to see the current state without changing it so it's included here for reference.
+  
+$('#plant2-show-state').click(function() {
+  // We just need to call stateControl() without arguments to see our current state.
+  const currentState = plant2StateControl();
+  $('#plant2-soil-value').text(`Soil: ${currentState.soil}`);
+  $('#plant2-water-value').text(`Water: ${currentState.water}`);
 });
