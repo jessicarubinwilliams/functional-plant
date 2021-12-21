@@ -11,7 +11,7 @@ export const storeState = () => {
 
 // This is a function factory. We can easily create more specific functions that alter a plant's soil, water, and light to varying degrees.
 
-const changeState = (prop) => {
+export const changeState = (prop) => {
   return (value) => {
     return (state) => ({
       ...state,
