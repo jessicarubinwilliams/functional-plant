@@ -27,11 +27,3 @@ export const blueFood = changeState("soil")(5);
 
 export const hydrate = changeState("water")(1);
 export const superWater = changeState("water")(5);
-
-export const plant = (name) => {
-  let plant = {
-    name
-  };
-
-  return  { ...plant };
-};

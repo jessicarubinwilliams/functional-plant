@@ -6,13 +6,10 @@ import { storeState, blueFood, feed, hydrate, superWater, plant } from './js/pla
 
 // This function has side effects because we are using jQuery. Manipulating the DOM will always be a side effect. Note that we only use one of our functions to alter soil. You can easily add more.
 
-const plant1 = plant("Air Plant");
 const plant1StateControl = storeState();
-
-const plant2 = plant("Rose Painted Calathea");
 const plant2StateControl = storeState();
 
-$('#plant1-name').text(plant1.name);
+$('#plant1-name').text("Air Plant");
 
 $('#plant1-super-feed').click(function() {
   const plant1State = plant1StateControl(blueFood);
@@ -43,7 +40,7 @@ $('#plant1-show-state').click(function() {
   $('#plant1-water-value').text(`Water: ${currentState.water}`);
 });
 
-$('#plant2-name').text(plant2.name);
+$('#plant2-name').text("Rose Painted Calathea");
 
 $('#plant2-super-feed').click(function() {
   const plant2State = plant2StateControl(blueFood);
