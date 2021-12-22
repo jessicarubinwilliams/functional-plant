@@ -33,5 +33,5 @@ export const plant = (name) => {
     name
   };
 
-  return  { ...plant, ...feed(plant), ...blueFood(plant), ...hydrate(plant), ...superWater(plant) };
+  return  { ...plant };
 };
